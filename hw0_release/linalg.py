@@ -14,11 +14,7 @@ def dot_product(a, b):
     Returns:
         out: numpy array of shape (x, x) (scalar if x = 1)
     """
-    out = None
-    ### YOUR CODE HERE
-    pass
-    ### END YOUR CODE
-    return out
+    return np.dot(a, b)
 
 
 def complicated_matrix_function(M, a, b):
@@ -35,12 +31,8 @@ def complicated_matrix_function(M, a, b):
     Returns:
         out: numpy matrix of shape (x, 1).
     """
-    out = None
     ### YOUR CODE HERE
-    pass
-    ### END YOUR CODE
-
-    return out
+    return dot_product(a, b) * dot_product(M, a)
 
 
 def svd(M):
